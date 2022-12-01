@@ -1,11 +1,27 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block contenido %}
-			<form method="POST">{%csrf_token%}
-				{{form.errors}}
-				<input type="text" name="username" placeholder="USUARIO">
-				<input type="password" name="password" placeholder="PASSWORD">
-
-				<input type="submit" name="" value="ENVIAR">
-			</form>
-{% endblock %}
+<div class="caja-logeo">
+	<div class="login">
+		<h1 class="titulo-login">Texto/Imagen</h1>
+		<form method="post">
+			<div class="formulario">
+				<input type="text" required>
+				<span></span>
+				<label>Usuario</label>
+			</div>
+			<div class="formulario">
+				<input type="password" required>
+				<span></span>
+				<label>contraseña</label>
+			</div>
+			<div class="olvidaste-contra">¿Olvidaste tu contraseña?</div>
+			<input type="submit" value="Ingresar">
+			<div class="registrarse-link">
+				No tienes cuenta? <a href="#">Registrarse</a>
+			</div>
+		</form>
+	</div>
+</div>
+{% endblock contenido %}
