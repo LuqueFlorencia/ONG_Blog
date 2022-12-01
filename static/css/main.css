@@ -1,5 +1,6 @@
 .contenedor {
     background-color: aquamarine;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 .centrar {
@@ -9,4 +10,8 @@
 .bloque {
     text-align: center;
     padding: 100px;
+}
+
+img{
+    margin: 10px;
 }
