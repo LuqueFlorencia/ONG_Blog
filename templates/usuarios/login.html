@@ -5,14 +5,15 @@
 <div class="caja-logeo">
 	<div class="login">
 		<h1 class="titulo-login">Texto/Imagen</h1>
-		<form method="post">
+		<form method="post"> {% csrf_token %} 
+			{{form.errors}}
 			<div class="formulario">
-				<input type="text" required>
+				<input type="text" name="username" required>
 				<span></span>
 				<label>Usuario</label>
 			</div>
 			<div class="formulario">
-				<input type="password" required>
+				<input type="password" name="password" required>
 				<span></span>
 				<label>contraseña</label>
 			</div>
