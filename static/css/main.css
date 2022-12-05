@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 .centrar {
     text-align: center;
 }
@@ -141,3 +143,16 @@ input[type="submit"]:hover {
 .registrarse-link a:hover {
     text-decoration: underline;
 }
+/* navbar*/
+.navbar {
+    font: 20px sans-serif;
+	border-bottom: #1a1919af 2px solid;
+    opacity: .3;
+	
+}
+
+.content{
+    padding-top: 100px;
+}
+
+
