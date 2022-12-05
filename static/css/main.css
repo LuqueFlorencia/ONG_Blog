@@ -65,6 +65,7 @@ form .formulario {
     border: none;
     background: none;
     outline: none;
+    color: white;
 }
 
 .formulario label {
@@ -193,6 +194,7 @@ form .formulario-registro {
     border: none;
     background: none;
     outline: none;
+    color:white;
 }
 
 .formulario-registro label {
