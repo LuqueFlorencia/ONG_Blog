@@ -17,7 +17,7 @@
 
 <body>
     <!--navbar-->
-    <div class="contenedor">
+    <div class="caja-logeo">
 
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
             <div class="container">
@@ -41,11 +41,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'nosotros' %}"><b>NOSOTROS</b></a>
                         </li>
-
-                        {% if  user.is_authenticated %}
-                        <strong>Hola {{user.username }}</strong>
-                        <a href="{% url 'logout' %}">LOGOUT</a>
-                        {% else %}
+                        <li class="nav-item">
+                            {% if  user.is_authenticated %}
+                            <a class="nav-link"><b>Hola {{user.username }}</b></a>
+                            <a class="nav-link" href="{% url 'logout' %}"><b>LOGOUT</b></a>
+                            {% else %}
+                        </li>
 
                         <li class="nav-item"></li>
                         <a class="nav-link" href="{% url 'login' %}"><b>LOGIN</b></a>
