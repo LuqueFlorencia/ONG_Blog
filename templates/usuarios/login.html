@@ -2,11 +2,9 @@
 {% load static %}
 
 {% block contenido %}
-
-
 <div class="caja-login">
 	<div class="login">
-		<h1 class="titulo-login">Texto/Imagen</h1>
+		<h1 class="titulo-login">Logeo</h1>
 		<form method="post"> {% csrf_token %} 
 			{{form.errors}}
 			<div class="formulario">
