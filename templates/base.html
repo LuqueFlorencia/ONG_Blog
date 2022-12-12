@@ -6,8 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/img/nuevologo.ico">
     <title>MI WEB | {% block titulo %} {% endblock titulo %}</title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css'%}">
+    <script src="https://kit.fontawesome.com/16f1912faa.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
 </head>
 
@@ -15,7 +18,7 @@
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
         </label>
         <label class="logo">Amigos del Arte y Turismo</label>
         <ul>
@@ -37,7 +40,7 @@
     {% block contenido %}
 
     {% endblock contenido %}
-
+    
     <footer class="pie-pagina">
         &copy;TODOS LOS DERECHOS RESERVADOS GRUPO 8 2022
     </footer>

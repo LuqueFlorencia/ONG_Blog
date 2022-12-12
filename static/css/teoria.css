@@ -1,0 +1,138 @@
+/*Propiedades de texto*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+ }
+
+.letra{
+    font-size: 20px; /*Tamaño de letra*/
+    font-family: Georgia, 'Times New Roman', Times, serif; /*tipo de letra*/
+    line-height: 1; /*es el espacio total que ocupa*/
+    font-weight: normal; /*grosor de la letra*/
+}
+
+/*a los elementos en linea no se puede darle height, ni width */
+/* A los elementos en bloque si se le puede dar height y width*/
+/*  Propiedades de caja   */
+.ejemplo h2{
+    display: inline;/*cambia a un elemento en linea ya que h2 es un elemento en bloque*/
+}
+.ejemplo p{
+    height: 400px;
+    width: 100px;
+}
+
+/*  Propiedades de caja   */
+.ejemplo h2 {
+    background-color:#a22; /*cambia el fondo*/
+    display: inline-block;
+    /*Es la distancia entre el texto y la caja. Hay 4 padding, padding-left distacia del borde derecho, padding-right distancia del borde izquierdo, padding-top distancia del borde superior y padding-bottom distancia del borde inferior  */
+    /* padding-bottom: 20px; /*padding-bottom distancia del borde inferior*/
+    /* padding-top: 20px;  padding-top distancia del borde superior */
+    /* padding-left: 30px; /*padding-left distacia del borde derecho*/
+    /* padding-right: 30px; padding-right distancia del borde izquierdo */
+    padding: 10px 50px; ;/* forma acortada. Primero es eje y despues eje x. tambien podemos darle 4 cuatro valores (primero top, segundo right, bottom tercero y ultimo left)*/
+    height: 100px;
+    width: 300px;
+    /*Si queremos que se mantenga esto, tenemos que usar el codigo de abajo*/
+    box-sizing: border-box;
+    /*Una manera de hacerlo bien es la siguiente*/
+    text-align: center;
+
+}
+
+.ejemplar h2{
+    background-color: #a22;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px 10px;/*Es la distancia de separacion de las cajas*/ /*Es igual que el padding(top,right,bottom y left)*/
+     border-radius: 10px; /*redondea bordes*/
+    /*border: 20px solid #a22;/*Simplificada*//*primero se redondea la caja, despues el estilo y despues el color que va tomar*/
+    box-shadow: 30px 20px 10px 3px #000;/*sombra*//*eje x, eje y, tamaño de desenfoque y cuanto va hacer el borde y despeus se le da el color */
+    text-shadow: 2px 2px 7px #fff ; /* Es lo mismo que box-shadow pero no tiene cuanto va hacer el borde*/
+    transform: rotate(45deg); /*rota la caja*/
+}
+
+/*  box model esta de mayor importanica jerarquica de arriba hacia abajo
+content line-height
+padding paddgin
+border border
+margin margin 
+*/
+
+/*out-line*//* Nos genera un border sin afectar a las demas cajas no ocupa un espacio */
+/* Es un short-hand(propiedad acortada,ej: border, margin, paddgin, etc) */
+
+.ejemplo div{
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    display: inline-block;
+}
+
+.ejemplo /*caja2*/{
+    outline: 5px solid red;/*Nos genera un borde que no ocupa espacio ni mueve la caja*/
+}
+
+
+/*  position  *//* STATIC, RELATIVE, ABSOLUTE, FIXED, STICKY*/
+
+.ejemplo div{
+    width: 120px;
+    height: 120px;
+    display: block;
+    background: yellow;
+}
+
+.caja1{
+    background-color: aquamarine;
+}
+
+.caja2{
+    background-color: rgb(16, 187, 0);
+    position: relative;/*Lo que hacemos que el espacio se siga conservando y adquirir la propiedad (Top, left, right y bottom) *//*Propiedades top y left son las mas importantes jerarquicamente*/
+    top: 40px;
+    left:20px;
+    z-index: 1;/*z.index por defecto viene con valor: 0, si le damos un valor mayor la caja se posiciona encima que caja 3*/
+}
+
+.caja3{
+    background-color: rgb(255, 0, 0);
+    position: relative;
+}
+
+.caja4{
+    background-color: rgb(4, 0, 255);
+}
+
+/*--Otro ejemplo z-index--*/
+
+.contenedor{
+    width: 300px;
+    height: 300px;
+    background: blue;
+    margin: 40px;
+    position: relative;
+}
+
+.hijo{
+    background: orange;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    z-index: -1;/*Para posicionarlo por encima podemos darle un valor -1 al hijo y al padre no darle z-index*/
+}
+
+/*  Position absolute */
+
+
+
+

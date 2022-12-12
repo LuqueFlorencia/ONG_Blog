@@ -16,8 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
-from django.conf import settings
-from django.conf.urls.static import static
 
 #URL LOGIN
 from django.contrib.auth import views as auth
@@ -36,4 +34,4 @@ urlpatterns = [
     #URL DE APLICACION
     path ('Noticias/', include('apps.noticias.urls')),
     path ('Usuario/', include('apps.usuarios.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
