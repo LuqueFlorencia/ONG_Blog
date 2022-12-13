@@ -27,7 +27,7 @@
             <li><a class="active-a" href="{% url 'nosotros' %}">Nosotros</a></li>
             <li>
                 {% if user.is_authenticated %}
-                <a class="active-a">Hola {{user.username }}</a>
+                <a class="active-a">Hola, {{user.username }}</a>
             </li>
             <a class="active-logout" href="{% url 'logout' %}">LOGOUT</a>
             {% else %}
@@ -42,7 +42,30 @@
     {% endblock contenido %}
     
     <footer class="pie-pagina">
-        &copy;TODOS LOS DERECHOS RESERVADOS GRUPO 8 2022
+        <div class="redes-text">
+            <h4>Redes y Lugar de Contacto</h4>
+        </div>
+        <div class="social-media">
+            <div class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <a href="https://www.facebook.com/EscultoresenelImpenetrable" target="_blank"><span><i class="fab fa-facebook-f"></i></span></a>
+            </div>
+            <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <a href="https://www.instagram.com/fundacion__amigos/" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
+            </div>
+            <div class="icon correo">
+                <div class="tooltip">info@amigosdelarteyturismo.org</div>
+                <span><i class="fa-regular fa-envelope"></i></span>
+            </div>
+            <div class="icon ubicacion">
+                <div class="tooltip">Ubicacion</div>
+                <a href="https://www.google.com.ar/maps/place/Fundaci%C3%B3n+Amigos+del+Arte+y+Turismo/@-25.9456008,-60.6207856,19z/data=!4m5!3m4!1s0x94404cfba5224f0b:0xbe1797f5f1777f83!8m2!3d-25.9455663!4d-60.6203754?hl=es" target="_blank"><span><i class="fa-solid fa-location-pin"></i></span></a>
+            </div>
+        </div>
+        <div class="copy">
+            &copy;TODOS LOS DERECHOS RESERVADOS GRUPO 8 2022
+        </div>
     </footer>
 
 </body>
