@@ -118,14 +118,15 @@ nav ul li a,
 
 /* LOGIN CSS INICIO */
 .caja-login{
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-sizing: border-box;
+    position: relative;
     width: 100%;
-    height: 80%;
+    height: 615px;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-    position: static;
-    border: 8px inline red;
-    background: #0F2027;
 }
 
 .login {
@@ -246,16 +247,13 @@ input[type="submit"]:hover {
 
 /* Inicio registro */
 .caja-registro {
-    background: #0F2027;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 690px;
+    height: 700px;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
@@ -272,6 +270,7 @@ input[type="submit"]:hover {
 
 .registro h3 {
     text-align: center;
+    font-size: 40px;
     padding: 0 0 20px 0;
     color: white;
 }
