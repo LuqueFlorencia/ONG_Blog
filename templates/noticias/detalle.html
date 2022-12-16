@@ -1,17 +1,29 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block titulo %}NOTICIAS{% endblock titulo%}
+{% block titulo %} NOTICIAS {% endblock titulo %}
 
 {% block contenido %}
-    <h2>DETALLE DE NOTICIAS</h2>
-
-        <img src="{{noticia.imagen.url}}" width="500" height="500">
-        <p>TITULO: {{noticia.titulo}}</p>
-        <p>FECHA: {{noticia.fecha}}</p>
-        <p>CATEGORIA: {{noticia.categoria_noticia}}</p>
-        <p>CUERPO: {{noticia.cuerpo}}</p>
-        <br><br>
-        <a href="{% url 'noticias:listar' %}">VOLVER</a>
-    
+<div class="volver-pag-detalle">
+    <a href="{% url 'noticias:listar' %}"><span class="material-symbols-outlined" style="font-size:50px;">
+            arrow_back_ios
+        </span></a>
+</div> 
+<div class="caja-detallar-noticias">
+    <div class="sub-caja-detallar">
+        <h1>Aca voy a detallar una noticia</h1>
+        <div class="imagen-caja-detallar">
+            <img class="imagen-detallar" src="{{noticia.imagen.url}}" alt="">
+        </div>
+        <span class="info-noticias-detalle"><p>FECHA: {{noticia.fecha}} CATEGORIA: {{noticia.categoria_noticia}} TITULO: {{noticia.titulo}}</p></span>
+        <div class="cuerpo-noticia-detalle">
+           <p>CUERPO: {{noticia.cuerpo}}</p>
+        </div>
+    </div>
+    <form method="post" action="{% url 'noticias:comentar' %}">{% csrf_token %}
+        <textarea name="comentario" maxlength="200"></textarea>
+        <input type="text" name="id_noticia" value="{{noticia.pk}}" hidden="">
+        <input type="submit" value="Guardar">
+    </form>
+</div>
 {% endblock contenido %}
