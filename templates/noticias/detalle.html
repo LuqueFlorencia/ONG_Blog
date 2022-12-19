@@ -32,8 +32,8 @@
             </div>
         </form>
         <br><br>
-        {% for com in comentario %}
-            <h4>>USUARIO:{{com.usuario}}, FECHA:{{com.fecha}}</h4>
+        {% for com in comentarios %}
+            <h4>>{{com.usuario}}, {{com.fecha}}</h4>
             <p>{{com.texto}}</p>
         {% endfor %}
     </div>
