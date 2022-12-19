@@ -426,7 +426,7 @@ form .formulario-registro {
     width: 100%;
     height: 655px;
     padding: 50px;
-    background-image: url(../img/escultores.jpg);
+    background-image: url(../img/inicio3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 0;
@@ -641,12 +641,13 @@ form .formulario-registro {
     position: relative;
     width: 800px;
     background: #fff;
-    margin:0 380px;
+    margin:20px 380px;
+    padding: 10px 0px;
     border-radius: 10px;
 }
 
 .cuerpo-noticias{
-    padding: 10px 0px;
+    padding: 20px 0px;
     margin: 0 40px;
 }
 
@@ -673,7 +674,7 @@ form .formulario-registro {
 
 .links-filtros{
     background-color: #ECE9E6;
-    width: 79px;
+    width: 95px;
     display: none;
     margin-left: 5px;
 }
@@ -704,6 +705,7 @@ form .formulario-registro {
 /* Fin pagina principal noticias */
 
 /* Inicio Detallando Noticias */
+
 .volver-pag-detalle{
     background: #f8f8ff;
 }
@@ -721,6 +723,10 @@ form .formulario-registro {
     background: #ffffff;
     margin:0 280px;
     border-radius: 10px;
+}
+
+.sub-caja-detallar h1{
+    margin: 10px;
 }
 
 .imagen-caja-detallar{
@@ -798,3 +804,33 @@ form .formulario-registro {
 /* FIN CAJA COMENTARIO*/
 
 /* Fin Detallando Noticias */
+
+/* INICIO NOSOTROS*/
+
+.caja-img-backgound{
+    margin: 10px 0;
+}
+
+.nosotros-img-1 img{
+    width: 100%;
+    height: 450px;
+}
+
+.caja-nosotros-texto p{
+    font-size: 25px;
+    font-family: 'Secular One', sans-serif;
+    color: #353535;
+    width: 80%;
+    margin-left: 150px;
+    padding-bottom: 50px;
+}
+
+.caja-nosotros-texto h5{
+    font-size: 40px;
+    color: #273c75;
+    padding: 40px 0;
+    margin-left: 150px;
+}
+
+
+/* FIN NOSOTROS */
